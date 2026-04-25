@@ -3,12 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astronaut List</title>
+  <title>👨‍🚀 Astronauts in Space</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="index.js"></script>
 </head>
 <body>
-  <h1>Astronauts Currently in Space</h1>
-  <ul id="astronaut-list"></ul>
-  <script src="index.js"></script>
+  <main class="container">
+    <h1>🚀 Astronauts Currently in Space</h1>
+    
+    <!-- Loading State -->
+    <div id="loading" class="message loading" hidden>
+      ⏳ Fetching data from NASA...
+    </div>
+    
+    <!-- Error State -->
+    <div id="error" class="message error" hidden>
+      ❌ Could not load astronauts. Please check your connection.
+    </div>
+    
+    <!-- Astronaut List -->
+    <ul id="astronaut-list" class="astronaut-list" hidden>
+      <!-- Items inserted by JavaScript -->
+    </ul>
+    
+    <!-- Refresh Button -->
+    <button id="refresh-btn" class="refresh-btn" hidden>
+      🔄 Refresh Data
+    </button>
+    
+    <p class="footer">Data from <a href="http://open-notify.org" target="_blank">Open Notify API</a></p>
+  </main>
 </body>
 </html>

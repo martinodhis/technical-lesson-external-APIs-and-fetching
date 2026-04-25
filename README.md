@@ -146,3 +146,6 @@ This lesson introduced the concept of fetching data from external APIs using
 JavaScript. You learned how to make asynchronous requests, process JSON responses, and 
 update the DOM dynamically. Mastering these skills is essential for creating modern, 
 data-driven web applications.
+
+
+# explorer.exe index.html
